@@ -18,8 +18,8 @@
     --font-family: "Outfit", sans-serif;
     --text-LG: bold 32px/125% var(--font-family);
     --text: 16px/1.5 var(--font-family);
-    --text-MD: 14px/175% var(--font-family);
-    --text-SM: 12px/175% var(--font-family);
+    --text-MD: 14px/170% var(--font-family);
+    --text-SM: 12px/170% var(--font-family);
 }
 
 body {
