@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout -Auto</title>
+    <title>Grid Layout - Auto-flow</title>
     <style>
         * {
             padding: 0;
@@ -14,9 +14,13 @@
         ul {
             display: grid;
             list-style: none;
+            background-color: cornflowerblue;
 
             grid-auto-flow: column;
-            grid-auto-rows: 1fr 2fr 3fr;
+            grid-auto-columns: max-content;
+            gap: 15px;
+            justify-content: end;
+            
         }
     </style>
 </head>
