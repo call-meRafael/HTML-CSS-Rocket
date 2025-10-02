@@ -50,6 +50,7 @@ header {
 @media (width <= 23.438rem) {
     a {
         position: relative;
+        margin-top: 0.5rem;
     }
 
     a span {
@@ -57,6 +58,7 @@ header {
         position: absolute;
         top: -0.5rem;
         right: -0.5rem;
+        margin-top: 0.5rem;
 
         background-color: var(--snitap-sun);
 
