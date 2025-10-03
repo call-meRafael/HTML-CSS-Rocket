@@ -188,23 +188,68 @@
 @media (width <= 23.438rem) {
     
     .hero {
-        --max-width: 375px;
-        width: min(var(--max-width), 100% - var(--px-lg) );
+        
+        width: 23.438rem;
         margin-inline: auto;
 
         h1 div {
             display: inline-block;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             overflow: hidden;
-            height: 2rem;
+            height: 2.3rem;
             width: min-content;
             vertical-align: bottom;
+        
         }
 
         h1 {
+            font-size: 1.9rem;
+        }
+
+        & h1 span {
+            display: block;
+            animation: slideUp 7s infinite ease-in-out;
             font-size: 2rem;
+
         }
     }
+
+    @keyframes slideUp {
+        0%, 20% {
+            transform: translateY(0);
+        }
+
+        /* 25% {
+            transform: translateY(-2.5rem);
+
+        } */
+
+
+        25%, 45% {
+            transform: translateY(-2.6rem);
+        }
+
+        /* 50% {
+            transform: translateY(-3.6rem);
+        } */
+
+        50%, 70% {
+            transform: translateY(-5.1rem);
+        }
+
+        /* 75% {
+            transform: translateY(-7.2rem);
+        } */
+
+        75%, 95% {
+            transform: translateY(-7.6rem);
+        }
+        100% {
+            transform: translateY(-7.5rem);
+        }
+    }
+
+
 
     
 }
