@@ -40,6 +40,14 @@ section.gallery {
         position: relative;
         line-height: 0;
 
+        animation: image-appear linear backwards;
+        animation-timeline: view();
+        animation-range: 100px 350px;
+
+        &[data-delay] {
+            animation-range: 150px 350px;
+        }
+
         & > img {
             height: 25rem;
             object-fit: cover;
@@ -49,7 +57,7 @@ section.gallery {
 
         &:hover {
             & > img {
-                transform: scale(1.1);
+                scale: 1.1;
             }
 
             & figcaption {
@@ -108,4 +116,11 @@ section.gallery {
     }
 
     
+}
+
+@keyframes image-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
 }
