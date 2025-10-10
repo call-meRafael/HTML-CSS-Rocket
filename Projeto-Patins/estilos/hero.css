@@ -188,7 +188,10 @@
 @media (width <= 23.438rem) {
     
     .hero {
-        
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+
         width: 23.438rem;
         margin-inline: auto;
 
@@ -204,6 +207,7 @@
 
         h1 {
             font-size: 1.9rem;
+            
         }
 
         & h1 span {
@@ -212,8 +216,68 @@
             font-size: 2rem;
 
         }
+
+        
+
+        & .buttons {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: space-between;
+            
+            & .button {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: .75rem;
+            
+
+            
+            border-radius: 5rem;
+            touch-action: manipulation;
+            transition: scale 100ms ease, opacity 100ms ease;
+
+            &.buy {
+                padding: 1.5rem 3rem;
+                background-color: var(--snitap-sun);
+                margin-top: 1rem;
+            }
+            &.play {
+                height: 48px;
+                
+            }
+
+            &.play span {
+                position: absolute;
+                left: 10px;
+                display: flex;
+                
+                
+                
+                
+                padding: 2rem;
+                border-radius: 50%;
+                background-color: white;
+            }
+
+            &:active {
+                transform: scale(0.95);
+                opacity: .8;
+            }
+        }
+        }
+
+        & > div:nth-child(2) {
+            height: 19.5rem;
+            
+        }
+
+        
     }
 
+    
+
+    
     @keyframes slideUp {
         0%, 20% {
             transform: translateY(0);
