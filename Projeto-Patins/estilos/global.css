@@ -53,7 +53,7 @@ a {
 
 
 
-@media (width <= 23.5rem) {
+@media (max-width: 376px) {
     
     .mobile-only {
         --max-width: 23.5rem;

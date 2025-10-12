@@ -102,7 +102,7 @@ footer {
     }
 }
 
-@media (width <= 23.5rem) {
+@media (max-width: 376px) {
     footer {
         display: flex;
         flex-direction: column;

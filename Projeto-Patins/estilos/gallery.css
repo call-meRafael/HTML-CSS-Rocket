@@ -125,7 +125,7 @@ section.gallery {
     }
 }
 
-@media (width <= 23.5rem) {
+@media (max-width: 376px) {
     section.gallery {
         
 
