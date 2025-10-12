@@ -185,14 +185,14 @@
     }
 }
 
-@media (width <= 23.438rem) {
+@media (width <= 23.5rem) {
     
     .hero {
         display: flex;
         flex-direction: column-reverse;
         gap: 2rem;
 
-        width: 23.438rem;
+        width: 23.5rem;
         margin-inline: auto;
 
         h1 div {
