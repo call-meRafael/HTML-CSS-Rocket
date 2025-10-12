@@ -47,7 +47,7 @@ header.top {
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 392px) {
     a {
         position: relative;
         margin-top: 0.5rem;

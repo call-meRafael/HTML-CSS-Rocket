@@ -53,10 +53,10 @@ a {
 
 
 
-@media (max-width: 376px) {
+@media (max-width: 392px) {
     
     .mobile-only {
-        --max-width: 23.5rem;
+        --max-width: 24rem;
         width: var(--max-width);
         margin-inline: auto;
         /* border: solid violet; */
